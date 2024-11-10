@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import { Toaster } from 'react-hot-toast';
 // import { ToastContainer } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
 import React from 'react';
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="app-container">
       {/* <ToastContainer /> */}
+      <Toaster />
       <AppWrapper />
     </div>
   );

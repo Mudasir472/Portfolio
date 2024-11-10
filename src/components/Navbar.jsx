@@ -4,7 +4,7 @@ import "./component.css"
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
-import logo from "/Logo.png"
+import logo from "/profile.png"
 const navigation = [
     { name: 'Home', href: '/', current: true },
     { name: 'Resume', href: '/resume', current: false },
@@ -62,7 +62,7 @@ export default function Navbar() {
                     </div>
                     <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto w-24 h-3/4 sm:pr-0">
 
-                        <Link className='w-full  h-full' to={'/'}><button className='w-full rounded-2xl btn h-full' onClick={() => { setActive(null) }} style={{ backgroundColor: "rgb(82 113 255)", color: "white" }}>Hire Me</button></Link>
+                        <Link className='w-full  h-full' to={'/contact'}><button className='w-full rounded-2xl btn h-full' onClick={() => { setActive(null) }} style={{ backgroundColor: "rgb(82 113 255)", color: "white" }}>Hire Me</button></Link>
                         {/* Profile dropdown */}
                     </div>
                 </div>
