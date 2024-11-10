@@ -8,6 +8,7 @@ import Home from "./views/Home";
 import Contact from "./views/Contact";
 import Footer from "./components/Footer";
 import PageNotFound from "./components/PageNotFound";
+import Resume from "./resume/Resume";
 
 
 function App() {
@@ -32,6 +33,7 @@ function AppWrapper() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
 
           {/* <Route path="/dashboard/*" element={<ProtectedRoute element={DashboardLayout} />} /> */}
           {/* Page not found */}
